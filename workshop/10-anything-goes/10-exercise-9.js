@@ -11,9 +11,12 @@
 // every([2,3,12], isEven) returns false
 
 function every(lst, func) {
-    // lst is an array and f is a function
-    // func takes 1 argument and returns a boolean
-
+    let test = true;
+    for (let i = 0; i < lst.length; i++) {
+        if (test) {
+         test = func(lst[i]);
+        }
+    }return test;
 }
 // -------------------------------------------------------------------------
 function isEven(num) { return num % 2 === 0 }

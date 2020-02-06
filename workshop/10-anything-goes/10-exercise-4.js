@@ -6,6 +6,10 @@
 
 function filterNonUnique(array) {
 
+    const answer = array.filter((item)=> {
+        return array.indexOf(item) === array.lastIndexOf(item)
+    })
+    return answer
 }
 
-console.log(filterNonUnique([1,2,3,3,4,5,6,7,7,8]));
+console.log(filterNonUnique([1,2,3,3,4,5,6,7,7,8])); // [1,2,4,5,6,8]

@@ -8,9 +8,9 @@
 // to the number itself. For example,
 // 371 is an Armstrong number since 3*3 + 7*3 + 1*3 = 371.
 
-let armstrongNumbers = [];
-
-// write your loop here...
-
-
-console.log(armstrongNumbers);
+for(var i = 100; i < 1000; i++){
+    let x = i.toString();
+    if (Math.pow(x[0],3) + Math.pow(x[1],3) + Math.pow(x[2],3) == i){
+    console.log(i); // 153, 370,371, 407
+    }
+    }

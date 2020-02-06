@@ -13,10 +13,18 @@
 // function isEven(x) {return x % 2 === 0;}
 // filter([1, 2, 3, 4, 5], isEven) returns [2,4];
 
+
 function filter(lst, func) {
     // lst is an array and f is a function
-    // func takes one argument and returns a boolean (true or false)
+    const testArray = [];
+       // func takes one argument and returns a boolean (true or false)
+       for(let i = 0; i < lst.length; i++) {
 
+           if(func(lst[i])) {
+               testArray.push(lst[i])
+           }
+       }
+return testArray
 }
 // -------------------------------------------------------------------------
 function keepLong(str) { return str.length > 5 }

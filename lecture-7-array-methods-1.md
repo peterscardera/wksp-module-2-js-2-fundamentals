@@ -52,6 +52,11 @@ And there are so many more.
 Let's dip into the internet and see if we can learn all of these methods collectively.
 
 1. `.includes()`, `.slice()`
+let veg = ["carrot", "celery", "brocolli"];
+const newArray = veg.slice(1,2)
+console.log(veg) //["carrot", "celery", "brocolli"];
+console.log(newArray) // celery
+
 2. `.indexOf()`, `.push()` 
 3. `.pop()`, `.sort()`
 4. `.shift()`, `.unshift()`

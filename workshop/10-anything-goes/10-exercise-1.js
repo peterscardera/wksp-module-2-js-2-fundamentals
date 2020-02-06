@@ -12,6 +12,14 @@
 
 function countBs(str) {
 
-}
-// -------------------------------------------------------------------------
-console.log('Q1: ', countBs('BananaBabyBubbles'));
+    let splitter = str.split("");
+    
+    let finder = splitter.filter(function(item) {
+        return item === "B"
+    })
+    return finder.length
+    
+    
+    }
+    // -------------------------------------------------------------------------
+    console.log('Q1: ', countBs('BananaBabyBubbles'));

@@ -12,8 +12,15 @@
 // map(["bob", "susie"], toUpperCase) returns ["BOB", "SUSIE"]
 
 function map(lst, func) {
-    // lst is an array and func is a function
-
+    function map(lst, func) {
+    
+        const array1 = []
+        
+        for (let i = 0; i < lst.length;i++ ) {
+            array1.push(func(lst[i]))
+        }
+        return array1;
+        }
 }
 // -------------------------------------------------------------------------
 function charCount(str) { return str.length };

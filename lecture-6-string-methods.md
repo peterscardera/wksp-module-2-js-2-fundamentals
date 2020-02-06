@@ -16,16 +16,16 @@ For example, all objects have `toString` and `valueOf` methods.
 
 ```js
 let num = 3;
-num.toString();
+num.toString(); //"3"
 
 let bool = true;
-bool.toString();
+bool.toString(); //string
 
 let str = 'hello';
-str.toString();
+str.toString(); // hello
 
 let arr = [1, 2, 'three'];
-arr.toString();
+arr.toString(); // removes the square brakets
 
 let dip = {value: 3};
 dip.toString();
@@ -81,6 +81,9 @@ It takes 2 parameters, the value to replace and the new value.
 ```js
 // Example
 const sentiment = 'I love programming';
+console.log(sentiment.replace("programming", "bacon")) // i love bacon
+
+console.log(sentiment) // i love programming
 
 ```
 
@@ -108,6 +111,11 @@ The `.concat()` method is used to join two or more strings.
 // Example
 let partOne = 'Do or do not.';
 let partTwo = 'There is no try.';
+partOne.concat.partTwo;
+const new1 = `${partOne} ${partTwo}`
+console.log(new1) // return Do or not. There is no try.
+
+
 
 ```
 

@@ -13,8 +13,14 @@
 function countChar(str, char) {
 
 
-}
-// -------------------------------------------------------------------------
-console.log('Q2: ', countChar('BananaBabyBubbles', 'u'));
-console.log('Q2: ', countChar('BananaBabyBubbles', 'a'));
-console.log('Q2: ', countChar('BananaBabyBubbles', 'Z'));
+    let splitter = str.split("");
+    let answer = splitter.filter(function(item) {
+        return item === char
+    })
+    return answer.length
+    
+    }
+    // -------------------------------------------------------------------------
+    console.log('Q2: ', countChar('BananaBabyBubbles', 'u'));
+    console.log('Q2: ', countChar('BananaBabyBubbles', 'a'));
+    console.log('Q2: ', countChar('BananaBabyBubbles', 'Z'));

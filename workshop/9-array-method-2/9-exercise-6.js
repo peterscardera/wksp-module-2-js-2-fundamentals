@@ -8,8 +8,25 @@
 // For example: greet(["bob", "eric"]) returns ["Hello bob", "Hello eric"]
 
 function greet(lst) {
-    // lst is an array of strings
-
+    const addAGreeting = lst.map((item) => {
+        return `hello ${item}`
+    })
+return addAGreeting
 }
 // -------------------------------------------------------------------------
 console.log('Q6 greet()', greet(['David', 'Billy', 'Lisa', 'Jennifer']));
+
+
+
+
+
+//just for practice
+
+// function greet(lst) {
+
+// const addAGreeting = lst.map(function(item){
+//     return `hello ${item}`
+// })
+// return addAGreeting
+
+// }
